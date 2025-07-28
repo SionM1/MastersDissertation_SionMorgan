@@ -1,0 +1,10 @@
+time_delta
+msg_frequency
+unique_ids_in_window
+total_msgs_in_window
+payload_entropy
+can_id_std
+payload_length
+time_delta_mean
+time_delta_std
+label

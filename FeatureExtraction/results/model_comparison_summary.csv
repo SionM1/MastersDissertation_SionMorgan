@@ -1,0 +1,6 @@
+Model,F1-Score,AUC,Precision,Recall,Training Time (s),Inference Time (s)
+LOF,0.9893,0.9926,0.9939,0.9847,3.565,16.579
+Autoencoder,0.988,0.9888,0.9969,0.9793,22.191,0.04
+OneClassSVM,0.9878,0.9884,0.9968,0.9791,6.552,31.262
+EllipticEnvelope,0.987,0.9875,0.994,0.9801,1.201,0.026
+DBSCAN,0.3682,0.5008,0.9442,0.2287,8.9,0.003
