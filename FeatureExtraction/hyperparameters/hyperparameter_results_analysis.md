@@ -10,7 +10,7 @@ Hyperparameter tuning was performed on 5 anomaly detection models using a system
 ## Best Parameters by Model
 
 ### 1. Autoencoder (Best Overall Performance)
-- **F1-Score**: 0.9904 ⭐
+- **F1-Score**: 0.9904 
 - **AUC**: 0.9907
 - **Best Parameters**: 
   - `epochs`: 50
@@ -40,7 +40,7 @@ Hyperparameter tuning was performed on 5 anomaly detection models using a system
 
 ### 4. Elliptic Envelope
 - **F1-Score**: 0.9883
-- **AUC**: 0.9914 ⭐ (Highest AUC)
+- **AUC**: 0.9914 (Highest AUC)
 - **Best Parameters**: 
   - `support_fraction`: 0.8
   - `contamination`: 0.1
