@@ -57,7 +57,7 @@ FeatureExtraction/
 │   ├── model_comparison_plots.png         # Performance comparison bar charts
 │   ├── model_radar_comparison.png         # Radar chart of top models
 │   └── performance_tradeoff_analysis.png  # Speed vs performance plots
-└── 📁 __pycache__/                        # Python cache files
+└── __pycache__/                        # Python cache files
 ```
 
 ## Quick Start
