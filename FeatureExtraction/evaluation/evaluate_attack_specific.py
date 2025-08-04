@@ -18,11 +18,11 @@ def load_trained_models():
     """
     models = {}
     model_files = {
-        'OneClassSVM': 'oneclasssvm_model.pkl',
-        'LOF': 'lof_model.pkl', 
-        'Autoencoder': 'autoencoder_model.pkl',
-        'DBSCAN': 'dbscan_model.pkl',
-        'EllipticEnvelope': 'ellipticenvelope_model.pkl'
+        'OneClassSVM': '../models/oneclasssvm_model.pkl',
+        'LOF': '../models/lof_model.pkl', 
+        'Autoencoder': '../models/autoencoder_model.pkl',
+        'DBSCAN': '../models/dbscan_model.pkl',
+        'EllipticEnvelope': '../models/ellipticenvelope_model.pkl'
     }
     
     print("Loading trained models...")
@@ -37,7 +37,7 @@ def load_trained_models():
     
     # Load scaler
     try:
-        with open('anomaly_scaler.pkl', 'rb') as f:
+        with open('../models/anomaly_scaler.pkl', 'rb') as f:
             scaler = pickle.load(f)
             print(f"   Scaler: Loaded successfully")
     except Exception as e:
@@ -191,8 +191,8 @@ def create_attack_comparison_report(all_results):
     comparison_df = pd.DataFrame(comparison_data)
     
     # Save detailed results
-    comparison_df.to_csv('attack_specific_results.csv', index=False)
-    print(f"Detailed results saved to: attack_specific_results.csv")
+    comparison_df.to_csv('../results/attack_specific_results.csv', index=False)
+    print(f"Detailed results saved to: ../results/attack_specific_results.csv")
     
     # Create summary by model
     print(f"\nPERFORMANCE SUMMARY BY MODEL:")
@@ -255,10 +255,12 @@ def main():
     
     # Define attack test files
     attack_files = {
-        'DoS': 'test_normal_vs_dos.csv',
-        'Fuzzy': 'test_normal_vs_fuzzy.csv',
-        'Gear': 'test_normal_vs_gear.csv',
-        'RPM': 'test_normal_vs_rpm.csv'
+        'DoS': '../data/test_normal_vs_dos.csv',
+        'Fuzzy': '../data/test_normal_vs_fuzzy.csv',
+        'Gear': '../data/test_normal_vs_gear.csv',
+        'RPM': '../data/test_normal_vs_rpm.csv',
+        'Phantom_ECU': '../data/test_normal_vs_phantom.csv',
+        'Realistic_Phantom_ECU': '../data/test_normal_vs_realistic_phantom.csv'
     }
     
     # Evaluate on each attack type
